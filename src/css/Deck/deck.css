@@ -1,0 +1,19 @@
+
+
+.deck-div{
+    padding: 3%;
+    border: 5px solid #070707;
+    margin: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck-div section{
+    border: 2px solid #070707;
+    margin: 2rem;
+    padding: 2rem;
+    height: 40%;
+    width: 70%;
+    border-radius: 1rem;
+}
