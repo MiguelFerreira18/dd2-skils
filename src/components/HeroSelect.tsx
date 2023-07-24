@@ -17,11 +17,14 @@ export default function HeroSelect(heroData: {heroData:HeroData[]}) {
         setIsModalVisible(false);
     }
 
+    function handleImageOnCLick(id:number) {
+        console.log(heroData.heroData[id]);
+    }
     return (
         <>
             <div className='hero-select' onClick={handleCardClick}>
                 <div>
-                    {isModalVisible && <Modal position={modalPosition} onClose={handleModalClose} heroData={heroData} />}
+                    {isModalVisible && <Modal position={modalPosition} onClose={handleModalClose} imageOnClick={handleImageOnCLick} heroData={heroData} />}
                 </div>
             </div>
 
