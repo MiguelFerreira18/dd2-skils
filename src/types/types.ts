@@ -1,4 +1,4 @@
-export interface HeroData {
+export type HeroData = {
   heroId: number;
   heroName: string;
   heroImage: string;

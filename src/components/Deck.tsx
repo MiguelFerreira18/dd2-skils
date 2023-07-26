@@ -1,8 +1,9 @@
 import '../css/Deck/deck.css'
-import {HeroData} from '../types/types.ts'
-import HeroSelect from './HeroSelect'
+import { HeroData } from '../types/types.ts'
+import HeroSelect from '../components/HeroSelect.tsx'
+import { useState } from 'react'
 
-const prototypeHeroSelect:HeroData[] = [
+const prototypeHeroSelect: HeroData[] = [
     {
         heroId: 0,
         heroName: 'Monk',
@@ -72,14 +73,17 @@ const prototypeHeroSelect:HeroData[] = [
 ]
 
 export default function Deck() {
+    const [hero, setHero] = useState<HeroData>();
+
     return (
         <div className='deck-div'>
+
             <section>
-            <HeroSelect heroData={prototypeHeroSelect} />
-            {/* Hero Select  */}
-            {/* Gear Select */}
-            {/* Relics  */}
-            {/* Mod, shard and stats  selection */}
+                <HeroSelect heroes={prototypeHeroSelect} setHeroState={setHero}/>
+                {/* Hero Select  */}
+                {/* Gear Select */}
+                {/* Relics  */}
+                {/* Mod, shard and stats  selection */}
             </section>
 
         </div>

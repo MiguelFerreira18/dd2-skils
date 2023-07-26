@@ -21,7 +21,9 @@
         "@typescript-eslint",
         "react"
     ],
-    "rules": {},
+    "rules": {
+        "@typescript-eslint/no-unused-vars": "warn"
+    },
     "settings": {
         "react": {
             "pragma": "React",
