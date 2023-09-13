@@ -1,16 +1,17 @@
 import './App.css'
 import Header from './components/Header'
 import Deck from './components/Deck'
+import Footer from './components/Footer'
 import supabase from "./config/supabase"
 
 function App() {
 
   return (
-    <>
-    <Header />
-    <Deck />
-    <footer></footer>
-    </>
+    <div className='app'>
+      <Header />
+      <Deck />
+      <Footer />
+    </div>
   )
 }
 
